@@ -1,4 +1,4 @@
-/node-modules
-/bower-components
+/node_modules
+/bower_components
 /!build
 /build/*
