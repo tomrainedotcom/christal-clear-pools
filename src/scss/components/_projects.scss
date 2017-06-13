@@ -1,0 +1,18 @@
+.project-single {
+  .project-header {
+    .project-title {}
+  }
+
+  .project-media {
+    position: relative;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .project-body {
+    p {}
+  }
+}

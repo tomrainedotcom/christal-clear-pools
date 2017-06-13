@@ -1,0 +1,85 @@
+.single-special {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  @include all-border-radius;
+  .special-header {
+    background: #ffd555;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    @include top-border-radius;
+    h4.special-title {
+      margin: 0;
+      color: #3e3e3e;
+    }
+  }
+  .special-media {
+    font-size: 0;
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  .special-body {
+    padding-left: 8px;
+    padding-right: 8px;
+    background: #fff;
+    padding-top: 8px;
+    font-size: 14px;
+    flex-grow: 1;
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    ul {
+      margin: 8px 10px 0;
+      padding: 0 0 0 16px;
+      li {
+        line-height: 1.4em;
+        font-size: 14px;
+      }
+    }
+  }
+  .special-price {
+    @include bottom-border-radius;
+    background: $light;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    align-items: center;
+    .value {
+      color: $primary-300;
+      text-decoration: line-through;
+      margin-right: 8px;
+    }
+    .price {
+      color: $accent;
+      font-weight: 700;
+      margin-left: 8px;
+      font-size: 18px;
+    }
+  }
+  .special-action {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    a {
+      display: block;
+    }
+  }
+  .special-footer {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    .special-expiry {
+      font-size: 10px;
+      text-align: right;
+    }
+  }
+}

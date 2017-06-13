@@ -1,0 +1,37 @@
+@mixin animation ($time: 250ms) {
+  -webkit-transition: all $time linear;
+  -moz-transition: all $time linear;
+  -ms-transition: all $time linear;
+  -o-transition: all $time linear;
+  transition: all $time linear;
+}
+@mixin all-border-radius {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+@mixin top-border-radius {
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+@mixin right-border-radius {
+  -webkit-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+}
+@mixin bottom-border-radius {
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+@mixin left-border-radius {
+  -webkit-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+}
+@mixin custom-border-radius ($top-left: 5px, $top-right: 5px, $bottom-right: 5px, $bottom-left: 5px) {
+  -webkit-border-radius: $top-left $top-right $bottom-right $bottom-left;
+  border-radius: $top-left $top-right $bottom-right $bottom-left;
+}
+/* Bootstrap */
+@mixin make-row($gutter: $grid-gutter-width) {
+  margin-left: ceil(($gutter / -2));
+  margin-right: floor(($gutter / -2));
+  @include clearfix;
+}

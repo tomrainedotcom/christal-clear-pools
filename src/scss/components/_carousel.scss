@@ -1,0 +1,69 @@
+.carouselbox {
+  font-family: helvetica,sans-serif;
+  font-size: 14px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  @include animation(750ms);
+
+  .content {
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      list-style: none;
+    }
+
+    img {
+      user-drag: none;
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-drag: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+    }
+  }
+
+  &.active {
+    min-height: 50vh;
+
+    li {
+      position: absolute;
+      top: 9999px;
+
+      &.current {
+        top: 0;
+      }
+    }
+  }
+}
+
+.carousel-buttons {
+  display: none;
+
+  &.active {
+    display: block;
+    padding: 5px 0;
+    z-index: 10;
+    position: relative;
+
+    button {
+      display: inline-block;
+      background: none;
+      border: none;
+      outline: none;
+
+      .offscreen {
+        position: absolute;
+        left: -2000px;
+      }
+
+      &.disabled {
+        opacity: 0.4;
+      }
+    }
+  }
+}

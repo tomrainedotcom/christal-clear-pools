@@ -1,0 +1,235 @@
+nav {
+  #mobile-nav {
+    #menu-toggle {
+      a {
+        width: 24px;
+        height: 24px;
+        @include all-border-radius;
+
+        &:active {
+          background: rgba(0,0,0,0.3);
+        }
+      }
+    }
+  }
+
+  #main-nav {
+    display: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      font-size: 0;
+      vertical-align: top;
+      position: relative;
+
+      a {
+        text-decoration: none;
+        color: $link-color;
+        font-size: 14px;
+        line-height: 24px;
+        @include animation(200ms);
+        padding-left: 8px;
+        padding-right: 8px;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: block;
+
+        &:hover {
+          color: $link-hover-color;
+          @include animation(200ms);
+        }
+      }
+
+      &.current {
+        color: $link-hover-color;
+      }
+
+      &:first-child {
+        > a {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.sub-menu {
+  position: absolute;
+  max-height: 0;
+  top: 100%;
+  padding: 0;
+  margin-left: -8px;
+  background: $primary;
+  overflow: hidden;
+  @include animation(500ms);
+
+  &.active {
+    max-height: 500px;
+    @include animation(500ms);
+  }
+
+  li {
+    display: list-item;
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 8px;
+    margin-right: 8px;
+
+    a {
+      color: $light;
+      line-height: 2em;
+
+      &:hover {
+        color: $light !important;
+      }
+    }
+
+    &:first-child {
+      margin-top: 8px;
+
+      a {
+        padding-left: 8px !important;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+#sidebar-menu {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: $primary;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+  #sidebar-nav {
+    padding: 32px 0 0;
+    margin: 0;
+
+    li {
+      list-style: none;
+      font-size: 0;
+      position: relative;
+
+      a {
+        color: $light;
+        line-height: 2.4em;
+        border-top: 1px solid $light;
+        padding: 0 16px;
+        font-size: 14px;
+        display: block;
+        margin: 0 8px;
+
+        .sub-menu-marker {
+          position: absolute;
+          right: 8px;
+          display: block;
+          top: 0;
+          z-index: -1;
+          line-height: 1em;
+          @include animation(300ms);
+          -moz-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+
+          > * {
+            line-height: 34px;
+            color: inherit;
+          }
+        }
+
+        &.active {
+          .sub-menu-marker {
+            @include animation(300ms);
+            -moz-transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .sub-menu {
+        position: relative;
+        margin-left: 8px;
+
+        li {
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+
+      &:first-child {
+        a {
+          border-top: none;
+        }
+      }
+    }
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    font-size: 36px;
+  }
+}
+
+#footer-nav {
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      color: inherit;
+      line-height: 1.4em;
+      padding-left: 8px;
+      padding-right: 8px;
+      @include animation(200ms);
+
+      &:hover {
+        color: $link-hover-color;
+        @include animation(200ms);
+      }
+
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+}
+@media screen and (min-width: $tablet) {
+  nav {
+    #mobile-nav {
+      display: none;
+    }
+
+    #main-nav {
+      display: block;
+    }
+  }
+}

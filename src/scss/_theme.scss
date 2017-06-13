@@ -1,0 +1,21 @@
+$link-color: #000000;
+$link-hover-color: #34789b;
+$primary: rgba(52,120,155, 1);
+$primary-300: rgba(52,120,155, 0.3);
+$accent: rgba(52, 120, 155, 1);
+$accent-300: rgba(52, 120, 155, 0.3);
+$light: rgba(255,255,255, 0.87);
+$dark: rgba(0,0,0,0.87);
+
+body {
+  background: #e3e3e3;
+  color: rgba(0,0,0,0.87);
+}
+
+header {
+  background: #FFF;
+}
+
+section.background {
+  background: #fff;
+}

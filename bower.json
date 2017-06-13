@@ -1,0 +1,25 @@
+{
+  "name": "chris-tal_clear_pool_maintenence",
+  "description": "Basic website for Christal Clear Pool Maintenence",
+  "main": "index.js",
+  "keywords": [
+    "christal",
+    "clear",
+    "pool",
+    "maintenence"
+  ],
+  "authors": [
+    "Tom Raine <contact@tomraine.com>"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}

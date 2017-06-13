@@ -1,0 +1,120 @@
+{
+  "pages": [{
+      "src": "src/html/index.hbs",
+      "build": "index.html",
+      "data": {
+        "title": "",
+        "keywords": "",
+        "description": ""
+      }
+    },
+    {
+      "src": "src/html/services.hbs",
+      "build": "services.html",
+      "data": {
+        "title": "Services",
+        "keywords": "",
+        "description": ""
+      }
+    },
+    {
+      "src": "src/html/gallery.hbs",
+      "build": "gallery.html",
+      "data": {
+        "title": "Gallery",
+        "keywords": "",
+        "description": ""
+      }
+    },
+    {
+      "src": "src/html/prices.hbs",
+      "build": "prices.html",
+      "data": {
+        "title": "Prices",
+        "keywords": "",
+        "description": ""
+      }
+    },
+    {
+      "src": "src/html/news.hbs",
+      "build": "news.html",
+      "data": {
+        "title": "News",
+        "keywords": "",
+        "description": ""
+      }
+    },
+    {
+      "src": "src/html/contact.hbs",
+      "build": "contact.html",
+      "data": {
+        "title": "Contact",
+        "keywords": "",
+        "description": ""
+      }
+    },
+    {
+      "src": "src/html/services/testing.hbs",
+      "build": "services/testing.html",
+      "data": {
+        "title": "Testing",
+        "keywords": "",
+        "description": ""
+      }
+    },
+    {
+      "src": "src/html/services/maintenance.hbs",
+      "build": "services/maintenance.html",
+      "data": {
+        "title": "Maintenance",
+        "keywords": "",
+        "description": ""
+      }
+    },
+    {
+      "src": "src/html/services/repairs.hbs",
+      "build": "services/repairs.html",
+      "data": {
+        "title": "Repairs",
+        "keywords": "",
+        "description": ""
+      }
+    },
+    {
+      "src": "src/html/services/inspections.hbs",
+      "build": "services/inspections.html",
+      "data": {
+        "title": "Inspections",
+        "keywords": "",
+        "description": ""
+      }
+    },
+    {
+      "src": "src/html/news/lean-pool-care.hbs",
+      "build": "news/lean-pool-care.html",
+      "data": {
+        "title": "News - Lean Pool Care",
+        "keywords": "",
+        "description": ""
+      }
+    },
+    {
+      "src": "src/html/news/pool-leaks.hbs",
+      "build": "news/pool-leaks.html",
+      "data": {
+        "title": "News - Pool Leaks",
+        "keywords": "",
+        "description": ""
+      }
+    },
+    {
+      "src": "src/html/news/new-offer-available.hbs",
+      "build": "news/new-offer-available.html",
+      "data": {
+        "title": "News - New Offer Available",
+        "keywords": "",
+        "description": ""
+      }
+    }
+  ]
+}

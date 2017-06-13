@@ -1,0 +1,56 @@
+$tablet: 768px;
+$desktop: 1024px;
+
+#site-head.row,
+footer .row {
+  align-items: center;
+}
+
+.container {
+  width: calc(100% - 16px);
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 0 auto;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+section {
+  padding-top: 4px;
+  padding-bottom: 0;
+  margin-left: -8px;
+  margin-right: -8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.single-news-page {
+  section.background {
+    padding-bottom: 8px;
+  }
+}
+@media screen and (max-width: ($tablet - 1px)) {
+  .hidden-xs {
+    display: none;
+  }
+}
+@media screen and (min-width: ($tablet)) and (max-width: ($desktop - 1px)) {
+  .container {
+    width: ($tablet - 16px);
+  }
+}
+@media screen and (min-width: $desktop) {
+  .container {
+    width: ($desktop - 16px);
+  }
+}

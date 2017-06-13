@@ -1,0 +1,28 @@
+.phone {
+  @include animation(200ms);
+  font-size: 18px;
+
+  i {
+    color: $link-hover-color;
+  }
+
+  span {
+    line-height: 24px;
+    display: inline-block;
+    vertical-align: top;
+    background: rgba(52,120,155, 1);
+    color: #fff;
+    padding-left: 8px;
+    padding-right: 8px;
+    @include all-border-radius;
+    font-weight: 600;
+
+    &:hover {
+      background: rgba(52,120,155, 0.5);
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

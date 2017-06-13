@@ -1,0 +1,75 @@
+<div id="sidebar-menu">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <ul id="sidebar-nav">
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/gallery.html">Gallery</a></li>
+    <li>
+      <a href="#" class="has-sub-menu">
+        Services
+        <span class="sub-menu-marker"><i class="material-icons">keyboard_arrow_down</i></span>
+      </a>
+      <ul class="sub-menu">
+        <li><a href="/services/inspections.html">Inspections</a></li>
+        <li><a href="/services/testing.html">Testing</a></li>
+        <li><a href="/services/maintenance.html">Maintenance</a></li>
+        <li><a href="/services/repairs.html">Repairs</a></li>
+      </ul>
+    </li>
+    <li><a href="/prices.html">Prices</a></li>
+    <li><a href="/news.html">News</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+</div>
+<header>
+  <div class="container">
+    <nav>
+      <div class="row" id="mobile-nav">
+        <div id="menu-toggle" class="col-xs-3">
+          <a href="javascript:void(0)" onclick="openNav()">
+            <i class="material-icons">menu</i>
+          </a>
+        </div>
+        <div class="col-xs-9">
+          <div class="phone text-right">
+            <i class="material-icons">phone</i>
+            <span><a href="tel:0437671171">0437 671 171</a></span>
+          </div>
+        </div>
+      </div>
+      <ul id="main-nav">
+        <li>
+          <a href="/index.html"><i class="material-icons">home</i></a>
+        </li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li>
+          <a href="#" class="has-sub-menu">Services</a>
+          <ul class="sub-menu">
+            <li><a href="/services/inspections.html">Inspections</a></li>
+            <li><a href="/services/testing.html">Testing</a></li>
+            <li><a href="/services/maintenance.html">Maintenance</a></li>
+            <li><a href="/services/repairs.html">Repairs</a></li>
+          </ul>
+        </li>
+        <li><a href="/prices.html">Prices</a></li>
+        <li><a href="/news.html">News</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="site-head" class="row">
+      <div class="site-heading col-sm-6 col-xs-12">
+        <h1>Chris'tal Clear Pool Maintenence</h1>
+      </div>
+      <div class="col-sm-6 hidden-xs text-right">
+        <div class="phone">
+          <i class="material-icons">phone</i>
+          <span><a href="tel:0437671171">0437 671 171</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{{#if showBanner }}
+<div class="page-banner">
+  <img src="{{ showBanner }}" />
+</div>
+{{/if}}
