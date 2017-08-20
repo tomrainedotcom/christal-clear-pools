@@ -1,23 +1,20 @@
 header {
   padding-top: 8px;
-}
+  background: url('../images/header-bg.png') repeat-x left bottom #ffffff;
+  background-size: contain;
 
-.page-banner {
-  height: 20vh;
+  .site-heading {
+    h1.has-logo {
+      text-indent: -2000px;
+      display: inline-block;
+      height: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
 
-  img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-}
-@media screen and (min-width: ($tablet + 1px)) and (max-width: $desktop) {
-  .page-banner {
-    height: 35vh;
-  }
-}
-@media screen and (min-width: ($desktop + 1px)) {
-  .page-banner {
-    height: 40vh;
+    .logo {
+      max-width: 200px;
+      max-height: 120px;
+    }
   }
 }

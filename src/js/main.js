@@ -8,6 +8,33 @@ function openNav() {
 function closeNav() {
   document.getElementById("sidebar-menu").style.width = "0";
 }
+
+function serialize(obj) {
+  var str = [];
+  for(var p in obj)
+    if (obj.hasOwnProperty(p)) {
+      str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+    }
+  return str.join("&");
+}
+
+function httpPostAsync(url, data, callback)
+{
+  var http = new XMLHttpRequest();
+  var params = serialize(data);
+  http.open("POST", url, true);
+
+  //Send the proper header information along with the request
+  http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+  http.onreadystatechange = function() {//Call a function when the state changes.
+    if(http.readyState == 4 && http.status == 200) {
+        callback(http.responseText);
+    }
+  }
+  http.send(params);
+}
+
 document.addEventListener("DOMContentLoaded", function(event) {
   /* Setup click functions for sub menu items */
   var subMenuHandles = document.querySelectorAll('.has-sub-menu')
@@ -127,4 +154,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
     navigate(0);
   })();
+
+  // submit contact form
+  if (document.querySelector('#contact-form')) {
+    var contact_form = document.querySelector('#contact-form');
+
+    contact_form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var formData = {
+        name: document.querySelector('#name').value,
+        email: document.querySelector('#email').value,
+        phone: document.querySelector('#phone').value,
+        suburb: document.querySelector('#suburb').value,
+        message: document.querySelector('#message').value,
+        sendTo: document.querySelector('#send-to').value,
+        subject: document.querySelector('#subject').value
+      }
+      httpPostAsync('http://christalclearpools.com.au/submitForm.php', formData, function(res) {
+        console.log(res);
+      });
+    });
+  }
 });

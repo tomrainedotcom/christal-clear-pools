@@ -10,6 +10,10 @@
     display: flex;
     flex-direction: column;
 
+    .service-icon {
+      color: #cb7c15;
+    }
+
     .service-description {
       flex-grow: 1;
       padding-bottom: 8px;

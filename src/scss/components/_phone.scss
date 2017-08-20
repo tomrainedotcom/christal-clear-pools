@@ -3,24 +3,22 @@
   font-size: 18px;
 
   i {
-    color: $link-hover-color;
+    color: $link-color;
   }
 
   span {
     line-height: 24px;
     display: inline-block;
     vertical-align: top;
-    background: rgba(52,120,155, 1);
+    background: #cc7a17;
     color: #fff;
     padding-left: 8px;
     padding-right: 8px;
     @include all-border-radius;
     font-weight: 600;
-
-    &:hover {
-      background: rgba(52,120,155, 0.5);
-    }
-
+    // &:hover {
+    //   background: rgba(52,120,155, 0.5);
+    // }
     a {
       text-decoration: none;
     }

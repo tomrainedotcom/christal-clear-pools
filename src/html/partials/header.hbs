@@ -57,9 +57,11 @@
     </nav>
     <div id="site-head" class="row">
       <div class="site-heading col-sm-6 col-xs-12">
-        <h1>Chris'tal Clear Pool Maintenence</h1>
+        <h1 class="has-logo">Chris'tal Clear Pool Maintenence</h1>
+        <a href="/index.html"><img class="logo" src="/images/logo.png" alt="Chris'tal Clear Pool Manintenence" title="Chris'tal Clear Pool Manintenence" /></a>
       </div>
       <div class="col-sm-6 hidden-xs text-right">
+        {{> social}}
         <div class="phone">
           <i class="material-icons">phone</i>
           <span><a href="tel:0437671171">0437 671 171</a></span>
@@ -68,8 +70,3 @@
     </div>
   </div>
 </header>
-{{#if showBanner }}
-<div class="page-banner">
-  <img src="{{ showBanner }}" />
-</div>
-{{/if}}

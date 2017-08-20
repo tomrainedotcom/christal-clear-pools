@@ -1,0 +1,24 @@
+.page-banner {
+  height: 20vh;
+  overflow: hidden;
+  width: 100vw;
+
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    left: 0;
+  }
+}
+@media screen and (min-width: ($tablet + 1px)) and (max-width: $desktop) {
+  .page-banner {
+    height: 35vh;
+  }
+}
+@media screen and (min-width: ($desktop + 1px)) {
+  .page-banner {
+    height: 40vh;
+  }
+}

@@ -1,0 +1,14 @@
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+
+  a {
+    display: block;
+    max-width: 24px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

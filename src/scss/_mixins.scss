@@ -5,6 +5,13 @@
   -o-transition: all $time linear;
   transition: all $time linear;
 }
+@mixin my_animation ($time: 250ms) {
+  -webkit-transition: all $time linear;
+  -moz-transition: all $time linear;
+  -ms-transition: all $time linear;
+  -o-transition: all $time linear;
+  transition: all $time linear;
+}
 @mixin all-border-radius {
   -webkit-border-radius: 5px;
   border-radius: 5px;
