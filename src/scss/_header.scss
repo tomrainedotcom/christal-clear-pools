@@ -1,5 +1,6 @@
 header {
   padding-top: 8px;
+  padding-bottom: 8px;
   background: url('../images/header-bg.png') repeat-x left bottom #ffffff;
   background-size: contain;
 
@@ -15,6 +16,15 @@ header {
     .logo {
       max-width: 200px;
       max-height: 120px;
+    }
+  }
+}
+@media (max-width: 991px) {
+  header {
+    .site-heading {
+      .logo {
+        max-width: 170px;
+      }
     }
   }
 }

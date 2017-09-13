@@ -4,9 +4,9 @@
     <li><a href="/index.html">Home</a></li>
     <li><a href="/gallery.html">Gallery</a></li>
     <li>
-      <a href="#" class="has-sub-menu">
+      <a href="services.html" class="has-sub-menu">
         Services
-        <span class="sub-menu-marker"><i class="material-icons">keyboard_arrow_down</i></span>
+        <span class="/sub-menu-marker"><i class="material-icons">keyboard_arrow_down</i></span>
       </a>
       <ul class="sub-menu">
         <li><a href="/services/inspections.html">Inspections</a></li>
@@ -15,52 +15,44 @@
         <li><a href="/services/repairs.html">Repairs</a></li>
       </ul>
     </li>
-    <li><a href="/prices.html">Prices</a></li>
     <li><a href="/news.html">News</a></li>
     <li><a href="/contact.html">Contact</a></li>
   </ul>
 </div>
 <header>
   <div class="container">
-    <nav>
-      <div class="row" id="mobile-nav">
-        <div id="menu-toggle" class="col-xs-3">
-          <a href="javascript:void(0)" onclick="openNav()">
-            <i class="material-icons">menu</i>
-          </a>
-        </div>
-        <div class="col-xs-9">
-          <div class="phone text-right">
-            <i class="material-icons">phone</i>
-            <span><a href="tel:0437671171">0437 671 171</a></span>
-          </div>
-        </div>
-      </div>
-      <ul id="main-nav">
-        <li>
-          <a href="/index.html"><i class="material-icons">home</i></a>
-        </li>
-        <li><a href="/gallery.html">Gallery</a></li>
-        <li>
-          <a href="#" class="has-sub-menu">Services</a>
-          <ul class="sub-menu">
-            <li><a href="/services/inspections.html">Inspections</a></li>
-            <li><a href="/services/testing.html">Testing</a></li>
-            <li><a href="/services/maintenance.html">Maintenance</a></li>
-            <li><a href="/services/repairs.html">Repairs</a></li>
-          </ul>
-        </li>
-        <li><a href="/prices.html">Prices</a></li>
-        <li><a href="/news.html">News</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
     <div id="site-head" class="row">
-      <div class="site-heading col-sm-6 col-xs-12">
+      <div id="menu-toggle" class="visible-xs col-xs-4">
+        <a href="javascript:void(0)" onclick="openNav()">
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+      <div class="site-heading col-sm-3 col-xs-4">
         <h1 class="has-logo">Chris'tal Clear Pool Maintenence</h1>
         <a href="/index.html"><img class="logo" src="/images/logo.png" alt="Chris'tal Clear Pool Manintenence" title="Chris'tal Clear Pool Manintenence" /></a>
       </div>
-      <div class="col-sm-6 hidden-xs text-right">
+      <div class="col-sm-6 hidden-xs">
+        <nav>
+          <ul id="main-nav">
+            <li>
+              <a href="/index.html"><i class="material-icons">home</i></a>
+            </li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li>
+              <a href="/services.html" class="has-sub-menu">Services</a>
+              <ul class="sub-menu">
+                <li><a href="/services/inspections.html">Inspections</a></li>
+                <li><a href="/services/testing.html">Testing</a></li>
+                <li><a href="/services/maintenance.html">Maintenance</a></li>
+                <li><a href="/services/repairs.html">Repairs</a></li>
+              </ul>
+            </li>
+            <li><a href="/news.html">News</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-sm-3 col-xs-4 text-right">
         {{> social}}
         <div class="phone">
           <i class="material-icons">phone</i>

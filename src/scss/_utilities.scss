@@ -1,0 +1,9 @@
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.rounded-corners {
+  @include all-border-radius(15px);
+}

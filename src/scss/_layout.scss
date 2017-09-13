@@ -37,6 +37,12 @@ section {
     margin-left: 0;
     margin-right: 0;
   }
+
+  .section-body {
+    &.content {
+      padding: 0 15px 15px;
+    }
+  }
 }
 
 .single-news-page {
@@ -44,9 +50,17 @@ section {
     padding-bottom: 8px;
   }
 }
+
+.visible-xs {
+  display: none !important;
+}
 @media screen and (max-width: ($tablet - 1px)) {
   .hidden-xs {
     display: none;
+  }
+
+  .visible-xs {
+    display: block !important;
   }
 }
 @media screen and (min-width: ($tablet)) and (max-width: ($desktop - 1px)) {
