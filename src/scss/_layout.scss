@@ -1,6 +1,5 @@
 $tablet: 768px;
 $desktop: 1024px;
-
 #site-head.row,
 footer .row {
   align-items: center;
@@ -27,22 +26,26 @@ footer .row {
 
 section {
   padding-top: 4px;
-  padding-bottom: 0;
+  padding-bottom: 16px;
   margin-left: -8px;
   margin-right: -8px;
   padding-left: 8px;
   padding-right: 8px;
-
   &.background {
     margin-left: 0;
     margin-right: 0;
   }
-
   .section-body {
     &.content {
       padding: 0 15px 15px;
     }
   }
+}
+
+.fb-page {
+  margin-top: 48px;
+  margin-bottom: 15px;
+  width: 100%;
 }
 
 .single-news-page {
@@ -54,20 +57,22 @@ section {
 .visible-xs {
   display: none !important;
 }
+
 @media screen and (max-width: ($tablet - 1px)) {
   .hidden-xs {
     display: none;
   }
-
   .visible-xs {
     display: block !important;
   }
 }
+
 @media screen and (min-width: ($tablet)) and (max-width: ($desktop - 1px)) {
   .container {
     width: ($tablet - 16px);
   }
 }
+
 @media screen and (min-width: $desktop) {
   .container {
     width: ($desktop - 16px);

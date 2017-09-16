@@ -1,11 +1,13 @@
 @import 'layout';
-@import '../../node_modules/scss-flex-grid/_flex-grid';
+
+/*https://github.com/matthewsimo/scss-flex-grid*/
+
+@import '_flex-grid';
 @import 'extend-flex-grid';
 @import 'theme';
 @import 'mixins';
 @import 'bootstrap-custom';
 @import 'utilities';
-/*https://github.com/matthewsimo/scss-flex-grid*/
 @import 'typography';
 @import 'navigation';
 @import 'header';

@@ -1,85 +1,95 @@
-{{> head }}
-<body>
-{{> header showBanner=false }}
+{{> head }} {{> header showBanner=false }}
+<div id="fb-root"></div>
+<script>
+  (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10&appId=398094873938784";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+</script>
 <main>
   <div class="container">
-    <section>
-      <div class="section-header">
-        <h2 class="section-title">News</h2>
-      </div>
-      <div class="section-body">
-        <div class="row">
-          <div class="col-sm-4 col-xs-6">
-            <div class="news-article-single">
-              <div class="article-media">
-                <img src="images/news/special-offer.jpg" alt="Speical Offer" title="New Offer Available">
-              </div>
-              <div class="article-header">
-                <h4 class="article-title"><a href="/news/new-offer-available.html">New Offer Available</a></h4>
-              </div>
-              <div class="article-body">
-                <p>
-                  The two most common sayings are; "money can't buy happiness" and "The best things in life are free".
-                </p>
-              </div>
-              <div class="article-footer">
-                <div class="read-more"><a href="/news/new-offer-available.html">Read More</a></div>
-              </div>
-            </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-8">
+        <section>
+          <div class="section-header">
+            <h2 class="section-title">News</h2>
           </div>
-          <div class="col-sm-4 col-xs-6">
-            <div class="news-article-single">
+          <div class="section-body">
+            <div class="row">
+              <div class="col-sm-6 col-xs-12 col-md-4">
+                <div class="news-article-single">
+                  <div class="article-media">
+                    <img src="images/news/special-offer.jpg" alt="Speical Offer" title="New Offer Available">
+                  </div>
+                  <div class="article-header">
+                    <h4 class="article-title"><a href="/news/new-offer-available.html">New Offer Available</a></h4>
+                  </div>
+                  <div class="article-body">
+                    <p>
+                      The two most common sayings are; "money can't buy happiness" and "The best things in life are free".
+                    </p>
+                  </div>
+                  <div class="article-footer">
+                    <div class="read-more"><a href="/news/new-offer-available.html">Read More</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-12 col-md-4">
+                <div class="news-article-single">
 
-              <div class="article-media">
-                <img src="images/news/lean-pool-care.jpg" alt="Pool maintenence products and hose" title="Lean Pool Care">
+                  <div class="article-media">
+                    <img src="images/news/lean-pool-care.jpg" alt="Pool maintenence products and hose" title="Lean Pool Care">
+                  </div>
+                  <div class="article-header">
+                    <h4 class="article-title"><a href="/news/lean-pool-care.html">Lean Pool Care</a></h4>
+                  </div>
+                  <div class="article-body">
+                    <p>
+                      What is Lean Pool Care?
+                    </p>
+                    <p>
+                      Today, we’re talking about my concept of lean pool care...
+                    </p>
+                  </div>
+                  <div class="article-footer">
+                    <div class="read-more"><a href="/news/lean-pool-care.html">Read More</a></div>
+                  </div>
+                </div>
               </div>
-              <div class="article-header">
-                <h4 class="article-title"><a href="/news/lean-pool-care.html">Lean Pool Care</a></h4>
+              <div class="col-sm-6 col-xs-12 col-md-4">
+                <div class="news-article-single no-media">
+                  <div class="article-header">
+                    <h4 class="article-title"><a href="/news/pool-leaks.html">Pool Leaks</a></h4>
+                  </div>
+                  <div class="article-body">
+                    <p>
+                      I have been called many times over the last few weeks regarding possible pool leaks. In short yes at this time of year with
+                      the wind and heat a considerable amount of water will be lost weekly.
+                    </p>
+                    <p>
+                      Here is a simple test, get a bucket and place any amount of...
+                    </p>
+                  </div>
+                  <div class="article-footer">
+                    <div class="read-more"><a href="/news/pool-leaks.html">Read More</a></div>
+                  </div>
+                </div>
               </div>
-              <div class="article-body">
-                <p>
-                  What is Lean Pool Care?
-                </p>
-                <p>
-                  Today, we’re talking about my concept of lean pool care...
-                </p>
-              </div>
-              <div class="article-footer">
-                <div class="read-more"><a href="/news/lean-pool-care.html">Read More</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-xs-6">
-            <div class="news-article-single no-media">
-              <div class="article-header">
-                <h4 class="article-title"><a href="/news/pool-leaks.html">Pool Leaks</a></h4>
-              </div>
-              <div class="article-body">
-                <p>
-                  I have been called many times over the last few weeks regarding possible pool leaks. In short yes at this time of year with the wind and heat a considerable amount of water will be lost weekly.
-                </p>
-                <p>
-                  Here is a simple test, get a bucket and place any amount of...
-                </p>
-              </div>
-              <div class="article-footer">
-                <div class="read-more"><a href="/news/pool-leaks.html">Read More</a></div>
-              </div>
-            </div>
-          </div>
 
+            </div>
+        </section>
         </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <p>
-              This could be where a facebook feed can go
-            </p>
+        <div class="col-sm-6 col-xs-12 col-md-4">
+          <div class="fb-page" data-href="https://www.facebook.com/christalclearpoolmaintenance/" data-tabs="timeline" data-small-header="false"
+            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/christalclearpoolmaintenance/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/christalclearpoolmaintenance/">Chris&#039;tal Clear Pool Maintenance</a></blockquote>
           </div>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
 </main>
 {{> footer }}
-</body>
-</html>

@@ -115,7 +115,7 @@ gulp.task('css', ['clear-css', 'images'], function () {
       loadPaths: ['images/']
     }),
     autoprefixer({
-      browsers: ['last 2 versions', '> 2%']
+      browsers: ['last 2 versions', 'safari >= 8', 'ie 11', 'opera 12.1', 'ios 6', 'android 4']
     }),
     mqpacker
   ];
@@ -198,6 +198,7 @@ gulp.task('serve', ['run', 'watch'], function () {
   gulp.src(folder.build)
     .pipe(plumber())
     .pipe(webserver({
+      host: '0.0.0.0',
       livereload: true,
       directoryListing: false,
       open: true

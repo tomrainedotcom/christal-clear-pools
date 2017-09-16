@@ -9,7 +9,7 @@
   "author": "tomrainedotcom <contact@tomraine.com>",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^7.1.0",
+    "autoprefixer": "^7.1.4",
     "css-mqpacker": "^6.0.0",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
