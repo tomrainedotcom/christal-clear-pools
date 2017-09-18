@@ -1,6 +1,12 @@
 footer {
   padding-top: 16px;
-
+  #footer-nav {
+    li {
+      .a {
+        font-size: 12px;
+      }
+    }
+  }
   .sub-footer {
     font-size: 10px;
   }

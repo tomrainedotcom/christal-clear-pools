@@ -5,25 +5,21 @@ nav {
         width: 24px;
         height: 24px;
         @include all-border-radius;
-
         &:active {
-          background: rgba(0,0,0,0.3);
+          background: rgba(0, 0, 0, 0.3);
         }
       }
     }
   }
-
   #main-nav {
     display: none;
     padding: 0;
     margin: 0;
-
     li {
       display: inline-block;
       font-size: 0;
       vertical-align: top;
       position: relative;
-
       a {
         text-decoration: none;
         color: $link-color;
@@ -36,19 +32,16 @@ nav {
         cursor: pointer;
         display: block;
         font-weight: bold;
-
         &:hover {
           color: $link-hover-color;
           @include my_animation(200ms);
         }
       }
-
       &.current {
         color: $link-hover-color;
       }
-
       &:first-child {
-        > a {
+        >a {
           padding-left: 0;
         }
       }
@@ -66,12 +59,10 @@ nav {
   overflow: hidden;
   margin-bottom: 0;
   @include my_animation(500ms);
-
   &.active {
     max-height: 300px;
     @include my_animation(500ms);
   }
-
   li {
     display: list-item;
     list-style: none;
@@ -79,24 +70,19 @@ nav {
     padding-right: 0;
     margin-left: 8px;
     margin-right: 8px;
-
     a {
       color: $light;
       line-height: 2em;
-
       &:hover {
         color: $light !important;
       }
     }
-
     &:first-child {
       margin-top: 8px;
-
       a {
         padding-left: 8px !important;
       }
     }
-
     &:last-child {
       margin-bottom: 8px;
     }
@@ -123,12 +109,10 @@ nav {
   #sidebar-nav {
     padding: 32px 0 0;
     margin: 0;
-
     li {
       list-style: none;
       font-size: 0;
       position: relative;
-
       a {
         color: $light;
         line-height: 2.4em;
@@ -137,7 +121,6 @@ nav {
         font-size: 14px;
         display: block;
         margin: 0 8px;
-
         .sub-menu-marker {
           position: absolute;
           right: 8px;
@@ -151,13 +134,11 @@ nav {
           -o-transform: rotate(0deg);
           -ms-transform: rotate(0deg);
           transform: rotate(0deg);
-
-          > * {
+          >* {
             line-height: 34px;
             color: inherit;
           }
         }
-
         &.active {
           .sub-menu-marker {
             @include my_animation(300ms);
@@ -169,18 +150,15 @@ nav {
           }
         }
       }
-
       .sub-menu {
         position: relative;
         margin-left: 8px;
-
         li {
           &:first-child {
             margin-top: 0;
           }
         }
       }
-
       &:first-child {
         a {
           border-top: none;
@@ -188,7 +166,6 @@ nav {
       }
     }
   }
-
   .closebtn {
     position: absolute;
     top: 0;
@@ -200,10 +177,8 @@ nav {
 #footer-nav {
   padding: 0;
   margin: 0;
-
   li {
     display: inline-block;
-
     a {
       text-decoration: none;
       cursor: pointer;
@@ -211,25 +186,24 @@ nav {
       line-height: 1.4em;
       padding-left: 8px;
       padding-right: 8px;
+      font-size: 12px;
       @include my_animation(200ms);
-
       &:hover {
         color: $link-hover-color;
         @include my_animation(200ms);
       }
-
       &:first-child {
         padding-left: 0;
       }
     }
   }
 }
+
 @media screen and (min-width: $tablet) {
   nav {
     #mobile-nav {
       display: none;
     }
-
     #main-nav {
       display: block;
     }

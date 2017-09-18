@@ -115,6 +115,23 @@
         "keywords": "",
         "description": ""
       }
+    },
+    {
+      "src": "src/html/privacy-policy.hbs",
+      "build": "news/privacy-policy.html",
+      "data": {
+        "title": "Privacy Policy",
+        "keywords": "",
+        "description": ""
+      }
+    }, {
+      "src": "src/html/terms-and-conditions.hbs",
+      "build": "news/terms-and-conditions.html",
+      "data": {
+        "title": "Terms and Conditions",
+        "keywords": "",
+        "description": ""
+      }
     }
   ]
 }

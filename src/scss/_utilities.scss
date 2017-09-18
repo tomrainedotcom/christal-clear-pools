@@ -7,3 +7,9 @@
 .rounded-corners {
   @include all-border-radius(15px);
 }
+
+@media screen and (min-width: 768px) {
+  .text-sm-right {
+    text-align: right;
+  }
+}
