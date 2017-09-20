@@ -2,9 +2,20 @@
   a {
     line-height: 2em;
     display: block;
-
     .material-icons {
       vertical-align: middle;
     }
+  }
+}
+
+#formResponse {
+  &.bg-success {
+    background: #cb7c15;
+    color: #fff;
+    padding: 8px;
+    margin-bottom: 12px;
+  }
+  p {
+    margin: 0;
   }
 }
