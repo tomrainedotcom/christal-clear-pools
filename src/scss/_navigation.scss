@@ -149,6 +149,11 @@ nav {
             transform: rotate(180deg);
           }
         }
+        &.has-sub-menu {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+        }
       }
       .sub-menu {
         position: relative;
@@ -156,6 +161,9 @@ nav {
         li {
           &:first-child {
             margin-top: 0;
+            a {
+              padding-left: 16px !important;
+            }
           }
         }
       }

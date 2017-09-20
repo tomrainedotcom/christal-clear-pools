@@ -3,22 +3,20 @@ header {
   padding-bottom: 8px;
   background: url('../images/header-bg.png') repeat-x left bottom #ffffff;
   background-size: contain;
-
   .site-heading {
     h1.has-logo {
       text-indent: -2000px;
-      display: inline-block;
       height: 0;
       margin-top: 0;
       margin-bottom: 0;
     }
-
     .logo {
       max-width: 200px;
       max-height: 120px;
     }
   }
 }
+
 @media (max-width: 991px) {
   header {
     .site-heading {

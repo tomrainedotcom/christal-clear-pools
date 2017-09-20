@@ -65,6 +65,9 @@ section {
   .visible-xs {
     display: block !important;
   }
+  .mb-xs-4 {
+    margin-bottom: 1.4rem;
+  }
 }
 
 @media screen and (min-width: ($tablet)) and (max-width: ($desktop - 1px)) {
