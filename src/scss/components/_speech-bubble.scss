@@ -1,13 +1,11 @@
 .speech-bubble {
   position: relative;
   margin-top: 16px;
-
   .speech-bubble-marker {
     position: absolute;
     width: 24px;
     height: 24px;
     overflow: hidden;
-
     &:before {
       content: " ";
       -moz-transform: rotate(45deg);
@@ -22,37 +20,30 @@
       position: absolute;
     }
   }
-
   .speech-bubble-content {
     background: $light;
     padding: 24px;
     text-align: center;
-
     .stars {
       i {
-        color: rgba(212, 175, 55, 1);
+        color: #ffc000;
       }
     }
-
     .review-author {
       text-align: center;
     }
   }
-
   &.bottom-right {
     padding-bottom: 16px;
     margin-bottom: 16px;
-
     .speech-bubble-content {
       @include custom-border-radius(5px, 5px, 0, 5px);
     }
-
     .speech-bubble-marker {
       bottom: 0;
       right: 8px;
       left: auto;
       top: auto;
-
       &:before {
         top: -17px;
         left: 17px;
@@ -61,21 +52,17 @@
       }
     }
   }
-
   &.top-right {
     padding-top: 24px;
     margin-top: 16px;
-
     .speech-bubble-content {
       @include custom-border-radius(5px, 0, 5px, 5px);
     }
-
     .speech-bubble-marker {
       bottom: auto;
       right: 8px;
       left: auto;
       top: 0;
-
       &:before {
         top: auto;
         left: auto;
@@ -84,21 +71,17 @@
       }
     }
   }
-
   &.bottom-left {
     padding-bottom: 16px;
     margin-bottom: 16px;
-
     .speech-bubble-content {
       @include custom-border-radius(5px, 5px, 5px, 0);
     }
-
     .speech-bubble-marker {
       bottom: 0;
       right: auto;
       left: 8px;
       top: auto;
-
       &:before {
         top: -17px;
         left: -17px;
@@ -107,21 +90,17 @@
       }
     }
   }
-
   &.top-left {
     padding-top: 24px;
     margin-top: 16px;
-
     .speech-bubble-content {
       @include custom-border-radius(0, 5px, 5px, 5px);
     }
-
     .speech-bubble-marker {
       bottom: auto;
       right: auto;
       left: 8px;
       top: 0;
-
       &:before {
         top: auto;
         left: -17px;
@@ -131,6 +110,7 @@
     }
   }
 }
+
 @media screen and (min-width: $tablet) {
   .speech-bubble {
     .speech-bubble-content {

@@ -3,9 +3,9 @@
       "src": "src/html/index.hbs",
       "build": "index.html",
       "data": {
-        "title": "",
-        "keywords": "",
-        "description": ""
+        "title": "Chris'tal Clear Pool Maintenance",
+        "keywords": "pool maintenance, pool cleaning, pool cleaners, pool care, pool cleaning company, pool inspections, pool service, swimming pool service, swimming pool maintenance service, kingscliff, casuarina, tweed heads, northern NSW, Murwillumbah, crystal pools, crystal clear pools, chris’tal clear pools, chris’tal clear",
+        "description": "Swimming pool maintenance & cleaning in Northern NSW & Southern GC. Chris’tal Clear provides maintenance services, certified pool inspections, repairs & testing"
       }
     },
     {
@@ -39,54 +39,54 @@
       "src": "src/html/news.hbs",
       "build": "news.html",
       "data": {
-        "title": "News",
-        "keywords": "",
-        "description": ""
+        "title": "Chris'tal Clear News | The latest on pool cleaning & maintenance",
+        "keywords": "pool cleaners, pool care, pool cleaning company, pool inspections, pool service, swimming pool service, latest information, news",
+        "description": "Keep up to date with the latest happening of Chris’tal Clear Pool Maintenance."
       }
     },
     {
       "src": "src/html/contact.hbs",
       "build": "contact.html",
       "data": {
-        "title": "Contact",
-        "keywords": "",
-        "description": ""
+        "title": "Contact | Chris'tal Clear Pool Maintenance",
+        "keywords": "contact Chris’tal Clear, phone number Chris’tal clear",
+        "description": "You can contact us on 0437 671 171. We would love to hear from you."
       }
     },
     {
       "src": "src/html/services/testing.hbs",
       "build": "services/testing.html",
       "data": {
-        "title": "Testing",
-        "keywords": "",
-        "description": ""
+        "title": "Swimming Pool Testing | The best in pool care & maintenance.",
+        "keywords": "pool cleaning, pool cleaning company, pool scleaning test, test my pool, pool service, pool cleaners, pool water testing",
+        "description": "Onsite swimming pool water balance testing using the latest computerised equipment. Only pay for what you need & get your swimming pool clean & ready to enjoy!"
       }
     },
     {
       "src": "src/html/services/maintenance.hbs",
       "build": "services/maintenance.html",
       "data": {
-        "title": "Maintenance",
-        "keywords": "",
-        "description": ""
+        "title": "Swimming Pool Maintenance | Weekly, Fortnightly or Monthly Pool Maintenance Service.",
+        "keywords": "swimming pool maintenance, pool maintenance, weekly pool service, fortnightly pool service, monthly pool service, pool service, pool care, swimming pool service.",
+        "description": "Your pool should be a pleasure, not a chore! We provide weekly, fortnightly, monthly cleaning & maintenance services in the Southern GC & Northern NSW."
       }
     },
     {
       "src": "src/html/services/repairs.hbs",
       "build": "services/repairs.html",
       "data": {
-        "title": "Repairs",
-        "keywords": "",
-        "description": ""
+        "title": "Swimming Pool Repairs | Pool pump repairs & more",
+        "keywords": "swimming pool repairs, pool pump repair, pool repair, pool leak, pool filter cleaner",
+        "description": "We offer a wide range of swimming pool repairs, including chlorinators, cleaners, pumps, filter leaks and more."
       }
     },
     {
       "src": "src/html/services/inspections.hbs",
       "build": "services/inspections.html",
       "data": {
-        "title": "Inspections",
-        "keywords": "",
-        "description": ""
+        "title": "Swimming Pool Inspections | NSW & QLD Pool Safety Certificate",
+        "keywords": "pool inspection, certified pool inspections, pool saftey, pool safety certificate, pool safety certificate Qld,  pool safety certificate NSW, pool compliance NSW, pool certification",
+        "description": "Need a pool safety certificate? Get in contact with Chris’tal Clear today and organise an inspection. We provide certified pool inspections for NSW & Qld."
       }
     },
     {

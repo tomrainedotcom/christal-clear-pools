@@ -1,22 +1,19 @@
 .phone {
   @include animation(200ms);
   font-size: 18px;
-
   i {
-    color: $link-color;
+    color: #ffc000;
   }
-
   span {
     line-height: 24px;
     display: inline-block;
     vertical-align: top;
-    background: #cc7a17;
+    background: #ffc000;
     color: #fff;
     padding-left: 8px;
     padding-right: 8px;
     @include all-border-radius;
-    font-weight: 600;
-    // &:hover {
+    font-weight: 600; // &:hover {
     //   background: rgba(52,120,155, 0.5);
     // }
     a {

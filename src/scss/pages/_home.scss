@@ -1,5 +1,12 @@
 .home-statement {
-  font-size: 26px;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  font-size: 40px;
+  margin: 20px;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .home-banner {
+    max-width: 75%;
+    margin: 0 auto 15px;
+  }
 }
